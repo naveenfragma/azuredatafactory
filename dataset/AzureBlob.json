@@ -1,0 +1,30 @@
+{
+	"name": "AzureBlob",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobLandingZone",
+			"type": "LinkedServiceReference"
+		},
+		"type": "AzureBlob",
+		"structure": [
+			{
+				"name": "APPL_ID",
+				"type": "Int64"
+			}
+		],
+		"typeProperties": {
+			"format": {
+				"type": "ParquetFormat"
+			},
+			"fileName": {
+				"value": "@concat('LOAN_RECON_DATA_FOR_DATALAKE','.parquet')",
+				"type": "Expression"
+			},
+			"folderPath": {
+				"value": "landing-zone/change-captured-data/loan_recon_data_for_datalake/full_load",
+				"type": "Expression"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,1047 @@
+{
+	"name": "AzureBlobPoc",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobLandingZone",
+			"type": "LinkedServiceReference"
+		},
+		"type": "AzureBlob",
+		"structure": [
+			{
+				"name": "PROPOSALID",
+				"type": "String"
+			},
+			{
+				"name": "AGREEMENTID",
+				"type": "String"
+			},
+			{
+				"name": "AGREEMENTTYPE",
+				"type": "String"
+			},
+			{
+				"name": "AGREEMENTNO",
+				"type": "String"
+			},
+			{
+				"name": "APPLID",
+				"type": "String"
+			},
+			{
+				"name": "ASSETCOST",
+				"type": "String"
+			},
+			{
+				"name": "AMTFIN",
+				"type": "String"
+			},
+			{
+				"name": "INTRATE",
+				"type": "String"
+			},
+			{
+				"name": "EFFRATE",
+				"type": "String"
+			},
+			{
+				"name": "MARKUP",
+				"type": "String"
+			},
+			{
+				"name": "INTTYPE",
+				"type": "String"
+			},
+			{
+				"name": "TENURE",
+				"type": "String"
+			},
+			{
+				"name": "FREQ",
+				"type": "String"
+			},
+			{
+				"name": "NUMINSTL",
+				"type": "String"
+			},
+			{
+				"name": "INSTALTYPE",
+				"type": "String"
+			},
+			{
+				"name": "INSTLMODE",
+				"type": "String"
+			},
+			{
+				"name": "ADVANCEINSTL",
+				"type": "String"
+			},
+			{
+				"name": "PRETAXIRR",
+				"type": "String"
+			},
+			{
+				"name": "POSTTAXIRR",
+				"type": "String"
+			},
+			{
+				"name": "SANCTIONDATE",
+				"type": "String"
+			},
+			{
+				"name": "AUTHID",
+				"type": "String"
+			},
+			{
+				"name": "STATEID",
+				"type": "String"
+			},
+			{
+				"name": "CATGID",
+				"type": "String"
+			},
+			{
+				"name": "TAXRATE",
+				"type": "String"
+			},
+			{
+				"name": "BOUNCECHEQUEFEE",
+				"type": "String"
+			},
+			{
+				"name": "BROKERAGERATE",
+				"type": "String"
+			},
+			{
+				"name": "MGMTFEERATE",
+				"type": "String"
+			},
+			{
+				"name": "RVRATE",
+				"type": "String"
+			},
+			{
+				"name": "SDRATE",
+				"type": "String"
+			},
+			{
+				"name": "OVERDUERATE",
+				"type": "String"
+			},
+			{
+				"name": "AGREEMENTDATE",
+				"type": "String"
+			},
+			{
+				"name": "COMMENCEDATE",
+				"type": "String"
+			},
+			{
+				"name": "CLOSUREDATE",
+				"type": "String"
+			},
+			{
+				"name": "RESCHEDULEDATE",
+				"type": "String"
+			},
+			{
+				"name": "STATUS",
+				"type": "String"
+			},
+			{
+				"name": "SPOTINTRATE",
+				"type": "String"
+			},
+			{
+				"name": "SCHEMEID",
+				"type": "String"
+			},
+			{
+				"name": "MARGINMONEY",
+				"type": "String"
+			},
+			{
+				"name": "PROPOSALCRDATE",
+				"type": "String"
+			},
+			{
+				"name": "PROPOSALCRBY",
+				"type": "String"
+			},
+			{
+				"name": "AGREEMENTCRDATE",
+				"type": "String"
+			},
+			{
+				"name": "AGREEMENTCRBY",
+				"type": "String"
+			},
+			{
+				"name": "PROPOSALMODDATE",
+				"type": "String"
+			},
+			{
+				"name": "PROPOSALMODBY",
+				"type": "String"
+			},
+			{
+				"name": "CREDITAUTHDATE",
+				"type": "String"
+			},
+			{
+				"name": "CREDITAUTHBY",
+				"type": "String"
+			},
+			{
+				"name": "PRDDOCAUTHDATE",
+				"type": "String"
+			},
+			{
+				"name": "PRDDOCAUTHBY",
+				"type": "String"
+			},
+			{
+				"name": "PODDOCAUTHDATE",
+				"type": "String"
+			},
+			{
+				"name": "PODDOCAUTHBY",
+				"type": "String"
+			},
+			{
+				"name": "CREDITAUTHREQD",
+				"type": "String"
+			},
+			{
+				"name": "PRDAUTHREQD",
+				"type": "String"
+			},
+			{
+				"name": "PODAUTHREQD",
+				"type": "String"
+			},
+			{
+				"name": "LESSEEID",
+				"type": "String"
+			},
+			{
+				"name": "ACTION",
+				"type": "String"
+			},
+			{
+				"name": "ACTIONDATE",
+				"type": "String"
+			},
+			{
+				"name": "PRINT_FLAG",
+				"type": "String"
+			},
+			{
+				"name": "DUEDAY",
+				"type": "String"
+			},
+			{
+				"name": "CREDITAUTHREQD_S",
+				"type": "String"
+			},
+			{
+				"name": "CREDITAUTHDATE_S",
+				"type": "String"
+			},
+			{
+				"name": "CREDITAUTHBY_S",
+				"type": "String"
+			},
+			{
+				"name": "CREDITAUTHREQD_O",
+				"type": "String"
+			},
+			{
+				"name": "CREDITAUTHDATE_O",
+				"type": "String"
+			},
+			{
+				"name": "CREDITAUTHBY_O",
+				"type": "String"
+			},
+			{
+				"name": "AMTOTHERS",
+				"type": "String"
+			},
+			{
+				"name": "REBATE",
+				"type": "String"
+			},
+			{
+				"name": "PENALTY",
+				"type": "String"
+			},
+			{
+				"name": "ACCRUAL_FLAG",
+				"type": "String"
+			},
+			{
+				"name": "CURRENCYID",
+				"type": "String"
+			},
+			{
+				"name": "PRININTCAL",
+				"type": "String"
+			},
+			{
+				"name": "DEANNUALIZE",
+				"type": "String"
+			},
+			{
+				"name": "BRANCHID",
+				"type": "String"
+			},
+			{
+				"name": "APPDATE",
+				"type": "String"
+			},
+			{
+				"name": "EMI",
+				"type": "String"
+			},
+			{
+				"name": "RESVALUE",
+				"type": "String"
+			},
+			{
+				"name": "ACCESSAMT",
+				"type": "String"
+			},
+			{
+				"name": "PREPAYPENALTY",
+				"type": "String"
+			},
+			{
+				"name": "MARGINRATE",
+				"type": "String"
+			},
+			{
+				"name": "FINALSOURCE",
+				"type": "String"
+			},
+			{
+				"name": "FINALSOURCEID",
+				"type": "String"
+			},
+			{
+				"name": "FIRSTSOURCE",
+				"type": "String"
+			},
+			{
+				"name": "FIRSTSOURCEID",
+				"type": "String"
+			},
+			{
+				"name": "PROMOTIONSCHEME",
+				"type": "String"
+			},
+			{
+				"name": "LOAN_IN_NAME",
+				"type": "String"
+			},
+			{
+				"name": "SUPPLIERID",
+				"type": "String"
+			},
+			{
+				"name": "DPERYR",
+				"type": "String"
+			},
+			{
+				"name": "DISBURSALDATE",
+				"type": "String"
+			},
+			{
+				"name": "FORECLOSELOCKLN",
+				"type": "String"
+			},
+			{
+				"name": "PRODUCTFLAG",
+				"type": "String"
+			},
+			{
+				"name": "PDCFLAG",
+				"type": "String"
+			},
+			{
+				"name": "DECIMALS",
+				"type": "String"
+			},
+			{
+				"name": "RS_CONFIRM",
+				"type": "String"
+			},
+			{
+				"name": "GRACEPERIOD",
+				"type": "String"
+			},
+			{
+				"name": "LEA_LAST_ACR_DATE",
+				"type": "String"
+			},
+			{
+				"name": "LEA_NON_ACR_FLAG",
+				"type": "String"
+			},
+			{
+				"name": "LEA_ACR_INT_AMT",
+				"type": "String"
+			},
+			{
+				"name": "BATCHNUMBER",
+				"type": "String"
+			},
+			{
+				"name": "ACCOUNTING_MONTHLY_IRR",
+				"type": "String"
+			},
+			{
+				"name": "LEA_MONTHLY_IRR",
+				"type": "String"
+			},
+			{
+				"name": "MARGIN_MONEY_2",
+				"type": "String"
+			},
+			{
+				"name": "NOTEPAD",
+				"type": "String"
+			},
+			{
+				"name": "VAT_PRIN_RATE",
+				"type": "String"
+			},
+			{
+				"name": "VAT_INT_RATE",
+				"type": "String"
+			},
+			{
+				"name": "CRSCORE",
+				"type": "String"
+			},
+			{
+				"name": "AGE",
+				"type": "String"
+			},
+			{
+				"name": "MATURITY_AGE",
+				"type": "String"
+			},
+			{
+				"name": "NPA_STAGEID",
+				"type": "String"
+			},
+			{
+				"name": "BILL_FLAG",
+				"type": "String"
+			},
+			{
+				"name": "LAST_LPI_DATE",
+				"type": "String"
+			},
+			{
+				"name": "NPA_DATE",
+				"type": "String"
+			},
+			{
+				"name": "DPD",
+				"type": "String"
+			},
+			{
+				"name": "DPD_STRING",
+				"type": "String"
+			},
+			{
+				"name": "DATELASTUPDT",
+				"type": "String"
+			},
+			{
+				"name": "DISBURSEDAMOUNT",
+				"type": "String"
+			},
+			{
+				"name": "FINANCECHARGE",
+				"type": "String"
+			},
+			{
+				"name": "BENEFITAMOUNT",
+				"type": "String"
+			},
+			{
+				"name": "DISBURSALTO",
+				"type": "String"
+			},
+			{
+				"name": "MKTGID",
+				"type": "String"
+			},
+			{
+				"name": "BROKERID",
+				"type": "String"
+			},
+			{
+				"name": "REFAGREEMENTID",
+				"type": "String"
+			},
+			{
+				"name": "ADVDISBINTRATE",
+				"type": "String"
+			},
+			{
+				"name": "VAT_INSTL_RATE",
+				"type": "String"
+			},
+			{
+				"name": "VAT_INPUT",
+				"type": "String"
+			},
+			{
+				"name": "DPD_STRING_STAMPDATE",
+				"type": "String"
+			},
+			{
+				"name": "BUCKET",
+				"type": "String"
+			},
+			{
+				"name": "CURRSEQNO",
+				"type": "String"
+			},
+			{
+				"name": "GRACE_INTEREST_CHARGE",
+				"type": "String"
+			},
+			{
+				"name": "GRACE_ADJUST_SCHEDULE",
+				"type": "String"
+			},
+			{
+				"name": "SANCTIONID",
+				"type": "String"
+			},
+			{
+				"name": "AUTCLOS_FLAG",
+				"type": "String"
+			},
+			{
+				"name": "MANUAL_NPA_MOVEMENT_FLAG",
+				"type": "String"
+			},
+			{
+				"name": "DISB_TYPE",
+				"type": "String"
+			},
+			{
+				"name": "NO_DISBURSAL",
+				"type": "String"
+			},
+			{
+				"name": "PEMI_RATE",
+				"type": "String"
+			},
+			{
+				"name": "INTTAXRATE",
+				"type": "String"
+			},
+			{
+				"name": "TDSRATE",
+				"type": "String"
+			},
+			{
+				"name": "LPIRATE",
+				"type": "String"
+			},
+			{
+				"name": "FLOATINGFLG",
+				"type": "String"
+			},
+			{
+				"name": "PLRTYPE",
+				"type": "String"
+			},
+			{
+				"name": "TAXAPPLICABLE",
+				"type": "String"
+			},
+			{
+				"name": "BALANCE_TRANSFER",
+				"type": "String"
+			},
+			{
+				"name": "RELATIONAL_DISCOUNT",
+				"type": "String"
+			},
+			{
+				"name": "OTHER_DISCOUNT",
+				"type": "String"
+			},
+			{
+				"name": "CO_APPL_REQ",
+				"type": "String"
+			},
+			{
+				"name": "GUARANTOR_REQ",
+				"type": "String"
+			},
+			{
+				"name": "SEC_DEPOSIT_REQ",
+				"type": "String"
+			},
+			{
+				"name": "FORECLOSE_ALLOWED",
+				"type": "String"
+			},
+			{
+				"name": "FORECLOSE_PENALTY",
+				"type": "String"
+			},
+			{
+				"name": "FORECLOSE_LOCK_PERIOD",
+				"type": "String"
+			},
+			{
+				"name": "ATMCODE",
+				"type": "String"
+			},
+			{
+				"name": "RATE",
+				"type": "String"
+			},
+			{
+				"name": "FEERATE",
+				"type": "String"
+			},
+			{
+				"name": "COSTOFFUNDS",
+				"type": "String"
+			},
+			{
+				"name": "LOSS",
+				"type": "String"
+			},
+			{
+				"name": "EXPENSES",
+				"type": "String"
+			},
+			{
+				"name": "CUSTOMERYIELD",
+				"type": "String"
+			},
+			{
+				"name": "PRETAXROI",
+				"type": "String"
+			},
+			{
+				"name": "ROI",
+				"type": "String"
+			},
+			{
+				"name": "TAX",
+				"type": "String"
+			},
+			{
+				"name": "TAX_PERCENTAGE",
+				"type": "String"
+			},
+			{
+				"name": "SECURITYCOVER",
+				"type": "String"
+			},
+			{
+				"name": "SECURITYTAKEN",
+				"type": "String"
+			},
+			{
+				"name": "CROSS_COLLATERAL",
+				"type": "String"
+			},
+			{
+				"name": "BILLNO",
+				"type": "String"
+			},
+			{
+				"name": "RELATIONSHIP_DISC",
+				"type": "String"
+			},
+			{
+				"name": "PROFESSIONAL_DISC",
+				"type": "String"
+			},
+			{
+				"name": "PREPAY_ALLOWED",
+				"type": "String"
+			},
+			{
+				"name": "PREPAY_PENALTY",
+				"type": "String"
+			},
+			{
+				"name": "PREPAY_LOCK_PERIOD",
+				"type": "String"
+			},
+			{
+				"name": "FORECLOSURE_PENALTY",
+				"type": "String"
+			},
+			{
+				"name": "DSSNO",
+				"type": "String"
+			},
+			{
+				"name": "MATURITYDATE",
+				"type": "String"
+			},
+			{
+				"name": "DEL_MONTHLY_STRING",
+				"type": "String"
+			},
+			{
+				"name": "MATURITYAMT",
+				"type": "String"
+			},
+			{
+				"name": "TENURETYPE",
+				"type": "String"
+			},
+			{
+				"name": "LPITYPE",
+				"type": "String"
+			},
+			{
+				"name": "ACTUAL_MONTHS",
+				"type": "String"
+			},
+			{
+				"name": "ACTUAL_DAYS",
+				"type": "String"
+			},
+			{
+				"name": "MATCH_FOUND",
+				"type": "String"
+			},
+			{
+				"name": "DEDUPE_RESULT",
+				"type": "String"
+			},
+			{
+				"name": "EMPLOYERID",
+				"type": "String"
+			},
+			{
+				"name": "REPAYMENT_EFFECTIVE_DATE",
+				"type": "String"
+			},
+			{
+				"name": "OUTSTANDINGPRINPRECENT",
+				"type": "String"
+			},
+			{
+				"name": "MIN_PENALAMOUNT",
+				"type": "String"
+			},
+			{
+				"name": "EMP_FLAG",
+				"type": "String"
+			},
+			{
+				"name": "PLRRATE",
+				"type": "String"
+			},
+			{
+				"name": "INSURCOID",
+				"type": "String"
+			},
+			{
+				"name": "INSUR_PRODUCTID",
+				"type": "String"
+			},
+			{
+				"name": "INSURANCE_FLAG",
+				"type": "String"
+			},
+			{
+				"name": "INSURED_TILL",
+				"type": "String"
+			},
+			{
+				"name": "DEPOSIT_ACCOUNT",
+				"type": "String"
+			},
+			{
+				"name": "SPREAD2",
+				"type": "String"
+			},
+			{
+				"name": "FLOATING_FREQUENCY",
+				"type": "String"
+			},
+			{
+				"name": "LAST_FLOAT_SPREAD_DATE",
+				"type": "String"
+			},
+			{
+				"name": "LTV_MULTIPLIER",
+				"type": "String"
+			},
+			{
+				"name": "DISBURSEMENT_DIRECT_CREDIT",
+				"type": "String"
+			},
+			{
+				"name": "STAT_ACC_FREQUENCY",
+				"type": "String"
+			},
+			{
+				"name": "SYSTEM",
+				"type": "String"
+			},
+			{
+				"name": "AMTFIN_REGULAR",
+				"type": "String"
+			},
+			{
+				"name": "AMTFIN_BONUS",
+				"type": "String"
+			},
+			{
+				"name": "FREQ_BONUS",
+				"type": "String"
+			},
+			{
+				"name": "INSTLMODE_BONUS",
+				"type": "String"
+			},
+			{
+				"name": "ADVANCEINSTL_BONUS",
+				"type": "String"
+			},
+			{
+				"name": "DISBURSALDATE_BONUS",
+				"type": "String"
+			},
+			{
+				"name": "INT_ROUNDOFF_PARA",
+				"type": "String"
+			},
+			{
+				"name": "INT_ROUNDTILL",
+				"type": "String"
+			},
+			{
+				"name": "INSTLAMT_ROUNDOFF_PARA",
+				"type": "String"
+			},
+			{
+				"name": "INSTLAMT_ROUNDTILL",
+				"type": "String"
+			},
+			{
+				"name": "PRIN_BASE_UNIT",
+				"type": "String"
+			},
+			{
+				"name": "FIXED_TERM",
+				"type": "String"
+			},
+			{
+				"name": "INTSTART_DATE_BONUS",
+				"type": "String"
+			},
+			{
+				"name": "INSTALTYPE_BONUS",
+				"type": "String"
+			},
+			{
+				"name": "INS_BILL_FLAG",
+				"type": "String"
+			},
+			{
+				"name": "SPECIAL_SPREAD",
+				"type": "String"
+			},
+			{
+				"name": "EMI_BONUS",
+				"type": "String"
+			},
+			{
+				"name": "NEXT_FLOAT_PRIME_DATE",
+				"type": "String"
+			},
+			{
+				"name": "NEXT_FLOAT_SPREAD_DATE",
+				"type": "String"
+			},
+			{
+				"name": "REFINANCE_RECEIPTID",
+				"type": "String"
+			},
+			{
+				"name": "STEP_RATE",
+				"type": "String"
+			},
+			{
+				"name": "AGE_PAST_AGR",
+				"type": "String"
+			},
+			{
+				"name": "INVOICE_FLAG",
+				"type": "String"
+			},
+			{
+				"name": "RC_FLAG",
+				"type": "String"
+			},
+			{
+				"name": "SERVICETAXRATE",
+				"type": "String"
+			},
+			{
+				"name": "DME_ID",
+				"type": "String"
+			},
+			{
+				"name": "GROUPID",
+				"type": "String"
+			},
+			{
+				"name": "PROMOTIONID",
+				"type": "String"
+			},
+			{
+				"name": "FILENO",
+				"type": "String"
+			},
+			{
+				"name": "APP_FORMNO",
+				"type": "String"
+			},
+			{
+				"name": "HFI_FLAG",
+				"type": "String"
+			},
+			{
+				"name": "HFI",
+				"type": "String"
+			},
+			{
+				"name": "EMPLOYER_ADDRESSID",
+				"type": "String"
+			},
+			{
+				"name": "EMPCODE",
+				"type": "String"
+			},
+			{
+				"name": "SPREADID",
+				"type": "String"
+			},
+			{
+				"name": "INITIAL_EFFRATE",
+				"type": "String"
+			},
+			{
+				"name": "INTSTART_DATE_REGULAR",
+				"type": "String"
+			},
+			{
+				"name": "TRANCHING_FLAG",
+				"type": "String"
+			},
+			{
+				"name": "TRANCHING_TYPE",
+				"type": "String"
+			},
+			{
+				"name": "COMPOUND_FREQ",
+				"type": "String"
+			},
+			{
+				"name": "INT_REBATE_FLAG",
+				"type": "String"
+			},
+			{
+				"name": "ACTUALIRR",
+				"type": "String"
+			},
+			{
+				"name": "DISB_STATUS",
+				"type": "String"
+			},
+			{
+				"name": "GROSS_LTV",
+				"type": "String"
+			},
+			{
+				"name": "NET_LTV",
+				"type": "String"
+			},
+			{
+				"name": "AMT_REQUESTED",
+				"type": "String"
+			},
+			{
+				"name": "TENURE_REQUESTED",
+				"type": "String"
+			},
+			{
+				"name": "RATE_EMI_FLAG",
+				"type": "String"
+			},
+			{
+				"name": "ASSET_MARKED",
+				"type": "String"
+			},
+			{
+				"name": "DISBURSALAMOUNT",
+				"type": "String"
+			},
+			{
+				"name": "ORG_SCHEMEID",
+				"type": "String"
+			},
+			{
+				"name": "LSI_AGREEMENT_NO",
+				"type": "String"
+			},
+			{
+				"name": "CHRG_FLG",
+				"type": "String"
+			},
+			{
+				"name": "DISB_FLAG",
+				"type": "String"
+			},
+			{
+				"name": "HL_FILE_NO",
+				"type": "String"
+			},
+			{
+				"name": "OLD_AGREEMENTNO",
+				"type": "String"
+			},
+			{
+				"name": "PEMI_BILLING",
+				"type": "String"
+			}
+		],
+		"typeProperties": {
+			"format": {
+				"type": "TextFormat",
+				"columnDelimiter": "|",
+				"rowDelimiter": "",
+				"nullValue": "\\N",
+				"encodingName": null,
+				"treatEmptyAsNull": true,
+				"skipLineCount": 0,
+				"firstRowAsHeader": true
+			},
+			"fileName": "JB_AGREEMENT_sample.txt",
+			"folderPath": "datafiles/JB_AGREEMENT"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

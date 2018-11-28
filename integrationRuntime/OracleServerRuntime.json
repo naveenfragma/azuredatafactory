@@ -1,0 +1,6 @@
+{
+	"name": "OracleServerRuntime",
+	"properties": {
+		"type": "SelfHosted"
+	}
+}

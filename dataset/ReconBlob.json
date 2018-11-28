@@ -1,0 +1,114 @@
+{
+	"name": "ReconBlob",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobLandingZone",
+			"type": "LinkedServiceReference"
+		},
+		"type": "AzureBlob",
+		"structure": [
+			{
+				"name": "APPL_ID",
+				"type": "String"
+			},
+			{
+				"name": "EMI",
+				"type": "String"
+			},
+			{
+				"name": "CUSTOMER_ID",
+				"type": "String"
+			},
+			{
+				"name": "INSTALLMENT_OVERDUE",
+				"type": "String"
+			},
+			{
+				"name": "AMOUNT_OUTSTANDING",
+				"type": "String"
+			},
+			{
+				"name": "EMI_PAID",
+				"type": "String"
+			},
+			{
+				"name": "PRINCIPAL_OVERDUE",
+				"type": "String"
+			},
+			{
+				"name": "PRINCIPAL_OUTSTANDING",
+				"type": "String"
+			},
+			{
+				"name": "INTEREST_OVERDUE",
+				"type": "String"
+			},
+			{
+				"name": "INTEREST_OUTSTANDING",
+				"type": "String"
+			},
+			{
+				"name": "BUCKET",
+				"type": "String"
+			},
+			{
+				"name": "PENALTY_PAID",
+				"type": "String"
+			},
+			{
+				"name": "PENALTY_DUE",
+				"type": "String"
+			},
+			{
+				"name": "BCC_PAID",
+				"type": "String"
+			},
+			{
+				"name": "BCC_DUE",
+				"type": "String"
+			},
+			{
+				"name": "OTHER_PAID",
+				"type": "String"
+			},
+			{
+				"name": "OTHER_DUE",
+				"type": "String"
+			},
+			{
+				"name": "PRINCIPLE_AMOUNT_PAID",
+				"type": "String"
+			},
+			{
+				"name": "INTEREST_PAID",
+				"type": "String"
+			},
+			{
+				"name": "BALANCE_TENURE",
+				"type": "String"
+			},
+			{
+				"name": "LAST_EMI_DATE",
+				"type": "String"
+			},
+			{
+				"name": "NEXT_EMI_DATE",
+				"type": "String"
+			}
+		],
+		"typeProperties": {
+			"format": {
+				"type": "TextFormat",
+				"columnDelimiter": "|",
+				"rowDelimiter": "",
+				"nullValue": "\\N",
+				"treatEmptyAsNull": true,
+				"skipLineCount": 0,
+				"firstRowAsHeader": true
+			},
+			"fileName": "LOAN_RECON_DATA_FOR_DATALAKE_1.txt",
+			"folderPath": "datafiles/LOAN_RECON_DATA_FOR_DATALAKE"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

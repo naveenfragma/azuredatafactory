@@ -1,0 +1,15 @@
+{
+	"name": "SqlServer",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": "integrated security=False;data source=pocserver;initial catalog=bajaj_poc;user id=fragma",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI2N2UwNDE3YS04MGU0LTQyYTEtOGVkMy0xMzE4YmRhNzM4ZjgiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "OracleServerRuntime",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

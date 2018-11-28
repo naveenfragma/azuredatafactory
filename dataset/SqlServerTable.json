@@ -1,0 +1,14 @@
+{
+	"name": "SqlServerTable",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SqlServer",
+			"type": "LinkedServiceReference"
+		},
+		"type": "SqlServerTable",
+		"typeProperties": {
+			"tableName": "[CHANDAN].[LOAN_RECON_DATA_FOR_DATALAKE]"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,104 @@
+{
+	"name": "OracleTable",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Oracle1",
+			"type": "LinkedServiceReference"
+		},
+		"type": "OracleTable",
+		"structure": [
+			{
+				"name": "APPL_ID",
+				"type": "Int32"
+			},
+			{
+				"name": "EMI",
+				"type": "String"
+			},
+			{
+				"name": "CUSTOMER_ID",
+				"type": "String"
+			},
+			{
+				"name": "INSTALLMENT_OVERDUE",
+				"type": "String"
+			},
+			{
+				"name": "AMOUNT_OUTSTANDING",
+				"type": "String"
+			},
+			{
+				"name": "EMI_PAID",
+				"type": "String"
+			},
+			{
+				"name": "PRINCIPAL_OVERDUE",
+				"type": "String"
+			},
+			{
+				"name": "PRINCIPAL_OUTSTANDING",
+				"type": "String"
+			},
+			{
+				"name": "INTEREST_OVERDUE",
+				"type": "String"
+			},
+			{
+				"name": "INTEREST_OUTSTANDING",
+				"type": "String"
+			},
+			{
+				"name": "BUCKET",
+				"type": "String"
+			},
+			{
+				"name": "PENALTY_PAID",
+				"type": "String"
+			},
+			{
+				"name": "PENALTY_DUE",
+				"type": "String"
+			},
+			{
+				"name": "BCC_PAID",
+				"type": "String"
+			},
+			{
+				"name": "BCC_DUE",
+				"type": "String"
+			},
+			{
+				"name": "OTHER_PAID",
+				"type": "String"
+			},
+			{
+				"name": "OTHER_DUE",
+				"type": "String"
+			},
+			{
+				"name": "PRINCIPLE_AMOUNT_PAID",
+				"type": "String"
+			},
+			{
+				"name": "INTEREST_PAID",
+				"type": "String"
+			},
+			{
+				"name": "BALANCE_TENURE",
+				"type": "String"
+			},
+			{
+				"name": "LAST_EMI_DATE",
+				"type": "String"
+			},
+			{
+				"name": "NEXT_EMI_DATE",
+				"type": "String"
+			}
+		],
+		"typeProperties": {
+			"tableName": "\"CHANDAN\".\"LOAN_RECON_DATA_FOR_DATALAKE\""
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

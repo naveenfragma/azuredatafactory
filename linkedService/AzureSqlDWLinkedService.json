@@ -1,0 +1,15 @@
+{
+	"name": "AzureSqlDWLinkedService",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"type": "AzureSqlDW",
+		"typeProperties": {
+			"connectionString": "integrated security=False;encrypt=True;connection timeout=30;data source=bajajpocedw.database.windows.net;initial catalog=bajajpoc_edw;user id=bajajpoc",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI2MGUzZGE2Mi03OTA5LTRkNjctOGQ1YS1hODQ2MjRlNjUzNDciLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "OracleServerRuntime",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

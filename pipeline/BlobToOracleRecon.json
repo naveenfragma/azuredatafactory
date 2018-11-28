@@ -1,0 +1,47 @@
+{
+	"name": "BlobToOracleRecon",
+	"properties": {
+		"activities": [
+			{
+				"name": "ReconActivity",
+				"type": "Copy",
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"typeProperties": {
+					"source": {
+						"type": "BlobSource",
+						"recursive": true
+					},
+					"sink": {
+						"type": "OracleSink",
+						"writeBatchSize": 10000
+					},
+					"enableStaging": false,
+					"dataIntegrationUnits": 0,
+					"translator": {
+						"type": "TabularTranslator",
+						"columnMappings": "APPL_ID: APPL_ID, EMI: EMI, CUSTOMER_ID: CUSTOMER_ID, INSTALLMENT_OVERDUE: INSTALLMENT_OVERDUE, AMOUNT_OUTSTANDING: AMOUNT_OUTSTANDING, EMI_PAID: EMI_PAID, PRINCIPAL_OVERDUE: PRINCIPAL_OVERDUE, PRINCIPAL_OUTSTANDING: PRINCIPAL_OUTSTANDING, INTEREST_OVERDUE: INTEREST_OVERDUE, INTEREST_OUTSTANDING: INTEREST_OUTSTANDING, BUCKET: BUCKET, PENALTY_PAID: PENALTY_PAID, PENALTY_DUE: PENALTY_DUE, BCC_PAID: BCC_PAID, BCC_DUE: BCC_DUE, OTHER_PAID: OTHER_PAID, OTHER_DUE: OTHER_DUE, PRINCIPLE_AMOUNT_PAID: PRINCIPLE_AMOUNT_PAID, INTEREST_PAID: INTEREST_PAID, BALANCE_TENURE: BALANCE_TENURE, LAST_EMI_DATE: LAST_EMI_DATE, NEXT_EMI_DATE: NEXT_EMI_DATE"
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "ReconBlob",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "OracleTable",
+						"type": "DatasetReference"
+					}
+				]
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
