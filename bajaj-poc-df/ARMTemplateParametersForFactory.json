@@ -1,0 +1,45 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "bajaj-poc-df"
+		},
+		"AzureBlobLandingZone_connectionString": {
+			"value": ""
+		},
+		"AzureSqlDWLinkedService_connectionString": {
+			"value": ""
+		},
+		"Oracle1_connectionString": {
+			"value": ""
+		},
+		"SqlServer_connectionString": {
+			"value": ""
+		},
+		"AzureBlob_properties_typeProperties_fileName": {
+			"value": "@concat('LOAN_RECON_DATA_FOR_DATALAKE','.parquet')"
+		},
+		"AzureBlob_properties_typeProperties_folderPath": {
+			"value": "landing-zone/change-captured-data/loan_recon_data_for_datalake/full_load"
+		},
+		"AzureBlobForOracle_properties_typeProperties_fileName": {
+			"value": "@concat('LOAN_RECON_DATA_FOR_DATALAKE','.parquet')"
+		},
+		"AzureBlobForOracle_properties_typeProperties_folderPath": {
+			"value": "landing-zone/change-captured-data-oracle/loan_recon_data_for_datalake/full_load"
+		},
+		"AzureBlobPoc_properties_typeProperties_fileName": {
+			"value": ""
+		},
+		"AzureBlobPoc_properties_typeProperties_folderPath": {
+			"value": "fedrated/JB_AGREEMENT"
+		},
+		"ReconBlob_properties_typeProperties_fileName": {
+			"value": "LOAN_RECON_DATA_FOR_DATALAKE_1.txt"
+		},
+		"ReconBlob_properties_typeProperties_folderPath": {
+			"value": "datafiles/LOAN_RECON_DATA_FOR_DATALAKE"
+		}
+	}
+}
