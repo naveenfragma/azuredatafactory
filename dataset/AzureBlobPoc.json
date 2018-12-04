@@ -1039,8 +1039,8 @@
 				"skipLineCount": 0,
 				"firstRowAsHeader": true
 			},
-			"fileName": "JB_AGREEMENT_sample.txt",
-			"folderPath": "datafiles/JB_AGREEMENT"
+			"fileName": "",
+			"folderPath": "fedrated/JB_AGREEMENT"
 		}
 	},
 	"type": "Microsoft.DataFactory/factories/datasets"
