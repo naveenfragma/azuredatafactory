@@ -17,7 +17,7 @@
 				"type": "ParquetFormat"
 			},
 			"fileName": {
-				"value": "@concat('LOAN_RECON_DATA_FOR_DATALAKE','.parquet')",
+				"value": "@concat('BUREAU_CUSTOMER','.parquet')",
 				"type": "Expression"
 			},
 			"folderPath": {
