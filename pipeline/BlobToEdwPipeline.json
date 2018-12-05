@@ -27,14 +27,7 @@
 							"useTypeDefault": true
 						}
 					},
-					"enableStaging": true,
-					"stagingSettings": {
-						"linkedServiceName": {
-							"referenceName": "AzureBlobLandingZone",
-							"type": "LinkedServiceReference"
-						},
-						"path": "testing"
-					},
+					"enableStaging": false,
 					"dataIntegrationUnits": 0,
 					"translator": {
 						"type": "TabularTranslator",
