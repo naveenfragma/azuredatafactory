@@ -25,7 +25,7 @@
 		},
 		"AzureBlob_properties_typeProperties_fileName": {
 			"type": "string",
-			"defaultValue": "@concat('LOAN_RECON_DATA_FOR_DATALAKE','.parquet')"
+			"defaultValue": "@concat('BUREAU_CUSTOMER','.parquet')"
 		},
 		"AzureBlob_properties_typeProperties_folderPath": {
 			"type": "string",
@@ -85,8 +85,13 @@
 							},
 							"sink": {
 								"type": "SqlDWSink",
-								"allowPolyBase": false,
-								"writeBatchSize": 10000
+								"allowPolyBase": true,
+								"writeBatchSize": 10000,
+								"polyBaseSettings": {
+									"rejectValue": 0,
+									"rejectType": "value",
+									"useTypeDefault": true
+								}
 							},
 							"enableStaging": false,
 							"dataIntegrationUnits": 0,
@@ -554,6 +559,57 @@
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/datasets/OracleTable')]",
 				"[concat(variables('factoryId'), '/datasets/AzureBlobForOracle')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/SQLServerToBLOB')]",
+			"type": "Microsoft.DataFactory/factories/pipelines",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"activities": [
+					{
+						"name": "SqlServerToBlobCopy",
+						"type": "Copy",
+						"dependsOn": [],
+						"policy": {
+							"timeout": "7.00:00:00",
+							"retry": 0,
+							"retryIntervalInSeconds": 30,
+							"secureOutput": false,
+							"secureInput": false
+						},
+						"userProperties": [],
+						"typeProperties": {
+							"source": {
+								"type": "SqlSource"
+							},
+							"sink": {
+								"type": "BlobSink"
+							},
+							"enableStaging": false,
+							"dataIntegrationUnits": 0
+						},
+						"inputs": [
+							{
+								"referenceName": "SqlServerTable",
+								"type": "DatasetReference",
+								"parameters": {}
+							}
+						],
+						"outputs": [
+							{
+								"referenceName": "AzureBlob",
+								"type": "DatasetReference",
+								"parameters": {}
+							}
+						]
+					}
+				],
+				"annotations": []
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/datasets/SqlServerTable')]",
+				"[concat(variables('factoryId'), '/datasets/AzureBlob')]"
 			]
 		},
 		{
@@ -1661,14 +1717,7 @@
 				],
 				"typeProperties": {
 					"format": {
-						"type": "TextFormat",
-						"columnDelimiter": "|",
-						"rowDelimiter": "",
-						"nullValue": "\\N",
-						"encodingName": null,
-						"treatEmptyAsNull": true,
-						"skipLineCount": 0,
-						"firstRowAsHeader": true
+						"type": "ParquetFormat"
 					},
 					"fileName": "[parameters('AzureBlobPoc_properties_typeProperties_fileName')]",
 					"folderPath": "[parameters('AzureBlobPoc_properties_typeProperties_folderPath')]"
@@ -2959,7 +3008,26 @@
 				"annotations": [],
 				"type": "SqlServerTable",
 				"typeProperties": {
-					"tableName": "[concat('[', 'CHANDAN].[LOAN_RECON_DATA_FOR_DATALAKE]')]"
+					"tableName": "[concat('[', 'dbo].[bureaucustomer]')]"
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/linkedServices/SqlServer')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/SqlServerTable1')]",
+			"type": "Microsoft.DataFactory/factories/datasets",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"linkedServiceName": {
+					"referenceName": "SqlServer",
+					"type": "LinkedServiceReference"
+				},
+				"annotations": [],
+				"type": "SqlServerTable",
+				"typeProperties": {
+					"tableName": "[concat('[', 'dbo].[bureaucustomer]')]"
 				}
 			},
 			"dependsOn": [

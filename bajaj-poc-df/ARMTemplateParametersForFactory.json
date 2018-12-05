@@ -18,7 +18,7 @@
 			"value": ""
 		},
 		"AzureBlob_properties_typeProperties_fileName": {
-			"value": "@concat('LOAN_RECON_DATA_FOR_DATALAKE','.parquet')"
+			"value": "@concat('BUREAU_CUSTOMER','.parquet')"
 		},
 		"AzureBlob_properties_typeProperties_folderPath": {
 			"value": "landing-zone/change-captured-data/loan_recon_data_for_datalake/full_load"
